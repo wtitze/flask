@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Welcome</title>
+    </head>
+    <body>
+        {% for comment in comments %}
+            {% if loop.index % 2 == 0 %}
+                <p style="text-align:right">{{loop.index}} - {{ comment }}</p>
+            {% else %}
+                <p style="text-align:left">{{loop.index}} - {{ comment }}</p>
+            {% endif %}
+            
+        {% endfor %}
+    </body>
+</html>
