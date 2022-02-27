@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Covid data</title>
+    </head>
+    <body>
+        <form action="/search" method = "GET">
+            {% for regione in list %}
+                <input type="radio" name = "regione" value="{{regione}}">{{regione}}</input> <br>
+            {% endfor %}
+            <p><input type = "submit" value = "Clicca per conoscere i dati" /></p>
+        </form>
+    </body>
+</html>
